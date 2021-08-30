@@ -50,32 +50,6 @@
 .search-result:hover {
     background-color:#def;
 }
-.timezones_active_entry {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin:5px;
-    padding:5px;
-    float:left;
-    cursor: pointer;
-    background-color:#abf;
-}
-.timezones_active_entry.off {
-    background-color:#fff;
-}
-.timezones_active_entry:hover {
-    background-color:#fde;
-}
-.timezones_active_entry:hover.off {
-    background-color:#def;
-}
-#clear_active {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin:5px;
-    padding:5px;
-    cursor: pointer;
-}
-
 
 #timebuttons {
     clear: both;

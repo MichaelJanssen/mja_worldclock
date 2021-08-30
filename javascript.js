@@ -116,8 +116,6 @@ function create_and_update_clocks() {
         if (!timezones_flat[code] && time_nodes[code]) {
             console.log('remove clock', code);
             time_nodes[code].parent().remove();
-            $('#timezones_active div[data-code=\''+code+'\']').addClass('off');
-            $('#clear_active').show();
             delete time_nodes[code];
         }
         else if (timezones_flat[code] && !time_nodes[code]) {
@@ -189,10 +187,6 @@ function show_all() {
     create_and_update_clocks();
 }
 
-function clear_active() {
-    $('#timezones_active .off').remove();
-    $('#clear_active').hide();
-}
 
 function main () {
     show(many);
@@ -266,15 +260,6 @@ function create_clocks(timezones) {
 
         time_nodes[code] = $('#'+clockId+' .time');
 
-        // create active button
-        if (!elem.small && city != 'UTC') {
-            var node = $('#timezones_active div[data-code=\''+code+'\']');
-            if (node.length) {
-                node.removeClass('off');
-            } else {
-                $('#timezones_active').append('<div class="timezones_active_entry" onclick="toggle_timezone(\''+code+'\');" data-code="'+code+'">'+city+'</div>');
-            }
-        }
     }
 }
 global_settime = null;
