@@ -1,0 +1,123 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: [col1] 67% [col2] 33%;
+    /* */
+    column-gap: 20px; /* line-size */
+    row-gap: 20px; /* line-size */
+}
+
+.clock {
+    float:left;
+    padding:2px 8px 5px 8px;
+    background-color:#fed;
+    transition: opacity 200ms;
+}
+.clock:hover {
+    z-index:2;
+}
+.small {
+    width:30px;
+    padding:0px 13px;
+    background-color:#fed;
+    transition: opacity 200ms;
+    font-size:small;
+}
+.remove_button {
+    cursor: pointer;
+}
+#worldclocks {
+    background: url(time_zones_map.png) no-repeat;
+    width: 1280px;
+    height: 690px;
+    position: relative;
+    float:left;
+}
+
+#search {
+    float:left;
+    padding:20px;
+}
+
+.search-result {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:5px;
+    padding:5px;
+    float:left;
+    cursor: pointer;
+}
+.search-result:hover {
+    background-color:#def;
+}
+.timezones_active_entry {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:5px;
+    padding:5px;
+    float:left;
+    cursor: pointer;
+    background-color:#abf;
+}
+.timezones_active_entry.off {
+    background-color:#fff;
+}
+.timezones_active_entry:hover {
+    background-color:#fde;
+}
+.timezones_active_entry:hover.off {
+    background-color:#def;
+}
+#clear_active {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:5px;
+    padding:5px;
+    cursor: pointer;
+}
+
+
+#timebuttons {
+    clear: both;
+}
+
+input[type=radio].btn + label {
+    display: inline-block;
+    padding: 14px;
+    margin: 3px;
+    background-image: linear-gradient(to top,#fff,#eee);
+    box-shadow: inset 0 1px 3px rgba(41, 41, 41, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    color: #444;
+    border-color: transparent;
+}
+input[type=radio].btn:checked + label {
+    background-image: linear-gradient(to top,#def,#cde);
+    color: #33c;
+    border-color: transparent;
+}
+
+.color.c0  {background-color: #999;}
+.color.c1  {background-color: #999;}
+.color.c2  {background-color: #999;}
+.color.c3  {background-color: #999;}
+.color.c4  {background-color: #999;}
+.color.c5  {background-color: #999;}
+.color.c6  {background-color: #999;}
+.color.c7  {background-color: #EBE6EC;}
+.color.c8  {background-color: #EBE6EC;}
+.color.c9  {background-color: #A8CCF0;}
+.color.c10 {background-color: #A8CCF0;}
+.color.c11 {background-color: #A8CCF0;}
+.color.c12 {background-color: #15C2FE;}
+.color.c13 {background-color: #15C2FE;}
+.color.c14 {background-color: #15C2FE;}
+.color.c15 {background-color: #15C2FE;}
+.color.c16 {background-color: #15C2FE;}
+.color.c17 {background-color: #15C2FE;}
+.color.c18 {background-color: #fda;}
+.color.c19 {background-color: #fda;}
+.color.c20 {background-color: #fda;}
+.color.c21 {background-color: #fda;}
+.color.c22 {background-color: #fda;}
+.color.c24 {background-color: #fda;}
