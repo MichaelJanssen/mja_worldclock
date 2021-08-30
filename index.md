@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Worldclock</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"> </script>
     <script type="text/javascript" src="jquery/moment-2.26.0-min.js"> </script>
